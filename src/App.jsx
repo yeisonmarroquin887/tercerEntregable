@@ -22,11 +22,24 @@ function App() {
 
   return (
     <div className="App">
-       <h1 className='App_title'>riky and morty</h1>
-        <form className='App_form' onSubmit={handelSubmit}>
+      <section className='App_inicial'>
+      <nav className='App_img'>
+      <img className='App_image' src="./image/riky.png" alt="" />
+      <img className='App_name' src="./image/name.png" alt="" />
+      <br />
+      <br />
+    <br />
+      <h1 className='App_phrase' >Wubba Lubba Dub Dub!</h1>
+      </nav>
+      <nav>
+      <form className='App_form' onSubmit={handelSubmit}>
           <input className='App_input' ref={inputLocation} type="number" />
           <button className='App_btn'>Search</button>
         </form>
+      </nav>
+      </section>
+    
+      
 
         {
           hasError
@@ -34,7 +47,7 @@ function App() {
           :  <MainContent location={location}/>
         } 
 
-       
+       <h1>e</h1>
      
       
    

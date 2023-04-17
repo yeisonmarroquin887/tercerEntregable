@@ -16,6 +16,7 @@ ul{
 input{
     outline: 0;
     border: 0;
+    text-align: center;
 }
 img{
     display: block;
