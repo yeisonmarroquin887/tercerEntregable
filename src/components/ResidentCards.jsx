@@ -1,5 +1,6 @@
 
 import useFetch from '../Hooks/useFetch'
+import Loading from './Loading'
 import './Style/Resident.css'
 
 const ResidentCards = ( {url} ) => {
@@ -8,7 +9,11 @@ const ResidentCards = ( {url} ) => {
   return (
     <section className='resident'>
      <header className='resident_header'>
-      <img className='resident_img' src={resident?.image} alt="" />
+      {
+        resident
+        ?  <img className='resident_img' src={resident?.image} alt="" />
+        : <img src="./image/images.gif" alt="" />
+      }
       <nav className='resident_status'>
         <div className={`resident_status-circle ${resident?.status}`}></div>
         <span className='resident_status-label'>{resident?.status}</span>

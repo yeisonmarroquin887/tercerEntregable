@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@600&display=swap');
 .location{
     padding: 2em;
     border-radius: 0.8em;
@@ -12,11 +13,13 @@
     text-align: center;
     margin-bottom: 1em;
     color: rgb(125,199,14);
+    font-family: 'Merienda', cursive;
 }
 .location_list{
     display: flex;
     gap: 1em;
     justify-content: space-around;
+    font-family: 'Merienda', cursive;
 }
 .location_item{
     display: flex;

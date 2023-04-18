@@ -16,7 +16,7 @@ function App() {
   const inputLocation = useRef()
   
  const handelSubmit = event => {
-    event.preventDefault()
+  event.preventDefault()
     setinputValue(inputLocation.current.value)
  }
 
@@ -36,13 +36,14 @@ function App() {
         <h1 className='App_phrase' >Wubba Lubba Dub Dub!</h1>
         </nav>
         <nav>
-        <form className='App_form' onSubmit={handelSubmit}>
-            <input className='App_input' ref={inputLocation} type="number" />
-            <button className='App_btn'>Search</button>
-          </form>
-        </nav>
+          <form className='App_form' onSubmit={handelSubmit}>
+              <input className='App_input' ref={inputLocation} type="text" />
+              <button className='App_btn'>Search</button>
+            </form>
+          </nav>
+        
         </section>
-      
+        
         
   
           {
@@ -51,15 +52,13 @@ function App() {
             :  <MainContent location={location}/>
           } 
   
-         <h1>e</h1>
+         
         </div>
         : <Loading/>
       }
-    
-    
-     
-      
-   
+      <footer className='footer'>
+        <a href="">Repositorio...</a>
+      </footer>
     </div>
   )
 }

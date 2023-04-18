@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@600&display=swap');
 .resident{
     max-width: 350px;
     border-radius: 1em;
@@ -5,6 +6,10 @@
     overflow: hidden;
     box-shadow: 0.2em 0.2em 0.5em #0009;
     transition: transform 250ms ease;
+    font-family: 'Merienda', cursive;
+}
+img{
+    width: 100%;
 }
 .resident:hover{
     transform: scale(1.05);
@@ -14,10 +19,10 @@
 position: relative;
 }
 .resident_status{
-    background-color: blue;
+    background-color: #062226;
     position: absolute;
     top: 15%;
-    width: 35%;
+    width: 39%;
     padding: 0.3em 0 0.3em 0.5em;
     border-radius: 0 0.5em 0.5em 0;
     display: flex;
@@ -42,6 +47,8 @@ padding: 1.4em 1.2em 2em;
 .resident_name{
     text-align: center;
     margin-bottom: 0.3em;
+    color: greenyellow;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
 }
 .resident_hr{
     border-color: #ccc5;

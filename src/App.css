@@ -8,10 +8,10 @@
 }
 .App_phrase{
     text-align: center;
-    color: greenyellow;
-    font-size: 2em;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-shadow: 2px 3px 5px green;
+    color: rgb(169, 248, 51);
+    font-size: 1.8em;
+    font-family: 'Merienda', cursive;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
 }
 .App_img{
  width: 100%;
@@ -41,8 +41,9 @@ position: relative;
     margin-bottom: 1.5em;
 }
 .App_input{
-    padding: 0.4em 0.8em;
+    padding: 0.5em 0.9em;
     border-radius: 0.5em 0 0 0.5em;
+    color: rgb(24, 226, 24);
 }
 .App_btn{
     border-radius: 0 0.5em 0.5em 0;
@@ -50,6 +51,40 @@ position: relative;
    background-color: rgb(24, 226, 24);
    cursor: pointer;
    color: white;
+   font-family: 'Merienda', cursive;
+}
+.App_btn:hover{
+    border-radius: 0 0.5em 0.5em 0;
+   padding: 0 1em;
+   background-color: rgb(7, 77, 7);
+   cursor: pointer;
+   color: rgb(112, 129, 226);
+}
+.App_error{
+    background-color: rgba(255, 0, 0, 0.199);
+    text-align: center;
+    height: 10rem;
+    padding: 3.5rem;
+    border-radius: 3rem;
+    max-width: 700px;
+    margin: auto;
+}
+.footer{
+    background-color: #062226;
+    box-shadow: 4px 4px 7px rgb(240, 245, 240);
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 3rem;
+    padding: 1rem;
+    border-radius: 4em;
+    font-family: 'Merienda', cursive;
+    font-size: 1.5rem;
+}
+a{
+   text-decoration: none;
+   color: aliceblue;
+   text-shadow: 2px 2px 4px rgb(165, 157, 157);
 }
 @media (min-width: 700px) {
     .App_img{
@@ -79,12 +114,27 @@ position: relative;
         color: greenyellow;
         font-size: 2em;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        text-shadow: 2px 3px 5px green;
+        text-shadow: 2px 2px 4px rgb(255, 255, 255);
         margin-top: 7em;
+        font-family: 'Merienda', cursive;
     }
        .App_form{
         display: flex;
         justify-content: center;
         margin-bottom: 1.5em;
+    }
+    .App_input{
+        margin-top: 1rem;
+        padding: 0.4em 0.9em;
+        border-radius: 0.5em 0 0 0.5em;
+        color: rgb(24, 226, 24);
+    }
+    .App_btn{
+        border-radius: 0 0.5em 0.5em 0;
+       padding: 0 1em;
+       background-color: rgb(24, 226, 24);
+       cursor: pointer;
+       color: white;
+       margin-top: 1rem;
     }
 }
