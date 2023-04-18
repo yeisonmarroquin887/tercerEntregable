@@ -57,7 +57,7 @@ function App() {
         : <Loading/>
       }
       <footer className='footer'>
-        <a href="">Repositorio...</a>
+        <a href="https://github.com/yeisonmarroquin887/tercerEntregable.git">Repositorio...</a>
       </footer>
     </div>
   )
